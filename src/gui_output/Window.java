@@ -1,23 +1,23 @@
 package gui_output;
 
-import javax.swing.JFrame;
-import java.awt.FlowLayout;
-import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.util.Random;
 
-public class Window extends JFrame{
-	
-	private JLabel item1;
-	
-	public Window() {
-		super("The title bar");
-		setLayout(new FlowLayout());
-		item1 = new JLabel("This is a sentence");
-	}
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Window{
 	public void createWindow() {
-		JFrame frame = new JFrame("Final Output");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Close Frame when Exit
-		frame.pack(); //Size the frame
-		frame.setVisible(true); //show the frame
-		return;
+		System.out.println("Creating window");
+		 Point point = new Point();
+		    JFrame frame = new JFrame("Final_Output");
+		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    frame.add(point);
+		    frame.setSize(400, 400);
+		    frame.setLocationRelativeTo(null);
+		    frame.setVisible(true);
 	}
 }
