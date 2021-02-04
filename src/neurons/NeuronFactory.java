@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class NeuronFactory{
-	private static X_DIMENSION = 0;
-	private static Y_DIMENSION = 1;
+	private static int X_DIMENSION = 0;
+	private static int Y_DIMENSION = 1;
 	
 	public ArrayList<Neuron> getNuerons(ArrayList<double[]> examplesList, int M){
 		ArrayList<Neuron> neurons = new ArrayList<Neuron>();
