@@ -24,6 +24,10 @@ public class SpotsFactory {
 		int i;
 	
 		for(i=0;i<E;i++) {
+			// TODO:
+			// 1. Replace with switch block (it's a factory and only in one place)
+			// 2. Remove extra Rectangle Classes, as the only difference can be parametrized
+			
 			if (i<100) {
 				spots.add(new CircleSpot(digits)); //Create spots inside circle with (0,0) as center and radius = 0.3
 			}else if (i<200) {
