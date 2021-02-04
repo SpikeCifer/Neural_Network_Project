@@ -93,8 +93,7 @@ public class LVQEngine {
 			}
 			if (c2==3) c1++;
 		}
-		if(c1==M) return true;
-		if (seasons==maxSeasons) return true;
+		if(c1 == M || seasons == maxSeasons) return true;
 		return false;
 	}
 	
