@@ -10,7 +10,7 @@ public class NeuronFactory{
 		Random r = new Random();
 		int range = examplesList.size(); //the range of random number it can get
 		
-		for(int i=0; i<M; i++){
+		for(int i = 0; i < M; i++){
 			double [] l = examplesList.get(r.nextInt(range));			
 			Neuron n = new Neuron(l[0],l[1]);
 			neurons.add(n);
