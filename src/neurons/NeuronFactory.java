@@ -11,12 +11,8 @@ public class NeuronFactory{
 		int range = examplesList.size(); //the range of random number it can get
 		
 		for(int i=0; i<M; i++){
-			double [] l = examplesList.get(r.nextInt(range));
-			
-			double x = l[0];
-			double y = l[1];
-			
-			Neuron n = new Neuron(x,y);
+			double [] l = examplesList.get(r.nextInt(range));			
+			Neuron n = new Neuron(l[0],l[1]);
 			neurons.add(n);
 		}
 		
