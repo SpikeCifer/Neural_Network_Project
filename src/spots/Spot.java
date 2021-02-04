@@ -5,6 +5,7 @@ import java.lang.Math;
 public class Spot 
 {
 	//private String type;
+	// public -> protected?
 	public double x;
 	public double y;
 	private Random coordinator = new Random();
@@ -15,21 +16,20 @@ public class Spot
 	 */
 	
 	public double genPrice(int min, int max, int n) { // n is the number of digits in the number
-		int range = max - min; //This shows the distance between max and min ;
+		int range = max - min; // This shows the distance between max and min ;
 		
 		if (n == 0) {
-			double number = coordinator.nextInt(range)+1;
+			double number = coordinator.nextInt(range) + 1;
 			return number + min;
 		}else {
-			int base = (int) Math.pow(10,n-1); //This is the multiplying base AKA the digits handler
-			double number = coordinator.nextInt(range * base) + (min * base);
-			number = number/Math.pow(10,n);
+			int base = (int) Math.pow(10, n-1); //This is the multiplying base AKA the digits handler
+			double number = coordinator.nextInt(range*base) + (min*base);
+			number = number/Math.pow(10, n);
 			return number;
 		}
 	}
 
-	public Spot(int digits){
-	}
+	public Spot(int digits){}
 	
 	public double getX() 
 	{
