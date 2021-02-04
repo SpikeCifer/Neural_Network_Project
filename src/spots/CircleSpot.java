@@ -10,5 +10,5 @@ public class CircleSpot extends Spot {
 			super.y = genPrice(-3,3,digits);	
 		} while(x * x + y * y > 0.3 * 0.3 ); //Keep producing until spot is inside given circle
 	}
-
+	// TODO: Simplify the condition with new function
 }
