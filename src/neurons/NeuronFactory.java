@@ -14,7 +14,7 @@ public class NeuronFactory{
 		
 		for(int i = 0; i < M; i++){
 			double [] example = examplesList.get(r.nextInt(range));			
-			Neuron n = new Neuron(example[X_DIMENSION],example[Y_DIMENSION]);
+			Neuron n = new Neuron(example[X_DIMENSION], example[Y_DIMENSION]);
 			neurons.add(n);
 		}
 		
